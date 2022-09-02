@@ -9,4 +9,4 @@ class cityDataSerializer(serializers.ModelSerializer):
 class finDataSerializer(serializers.ModelSerializer):
     class Meta:
         model = finData
-        fields = ['id', 'symbol','lastRefresh','dateRecent','closeRecent','openRecent','dateHistoric','closeHistoric']
+        fields = ['id', 'symbol','lastRefresh','regularMarketPrice','previousClose','currency','downloadRefreshDate','dateHistoric','closeHistoric']
